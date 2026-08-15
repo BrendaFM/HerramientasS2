@@ -1,0 +1,51 @@
+/* css/style.css */
+
+/* Sobrescribiendo la fuente genérica de Bootstrap por una más amigable */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f8fbff;
+}
+
+/* Personalizando la barra de navegación para que sea azul médica en vez de gris (bg-light) */
+.navbar {
+    background-color: #0056b3 !important;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #ffffff !important;
+}
+
+.nav-link:hover {
+    color: #b3d4fc !important;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Cambiando el color principal de los textos de Bootstrap (.text-primary) */
+.text-primary {
+    color: #0056b3 !important;
+}
+
+/* Efecto interactivo en las tarjetas de la página de especialidades */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 86, 179, 0.15) !important;
+}
+
+/* Modificando el footer */
+footer {
+    background-color: #003d82 !important;
+    border-top: none !important;
+}
+
+footer p.text-muted {
+    color: #d1e5fb !important;
+}
